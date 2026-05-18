@@ -7,4 +7,3 @@ def equipments_view(request):
     equipments = Equipment.objects.all()
     
     return render(request, "equipment.html", {"Equipment": equipments})
-

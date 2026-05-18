@@ -1,9 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from inventory.models import Equipment
+
 # Create your views here.
 def equipments_view(request):
-    html = """
-    <h1> Teste <h1/>
-    """
+    equipments = Equipment.objects.all()
     
-    return HttpResponse(html)
+    return render(request, "equipment.html", {"Equipment": equipments})
+

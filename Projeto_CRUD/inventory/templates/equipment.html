@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+{% block content %}
+
+<body> 
+    {% include "header.html" %} #adicionada
+    {% for equipments in Equipment  %}
+    <h1> {{equipments.brand}} - {{equipments.model}} - {{equipments.purchase_year}} <h1/> 
+    {% endfor %}
+
+    
+</body>
+
+{% include "footer.html" %} #adicionada
+{% endblock %}
+</html>

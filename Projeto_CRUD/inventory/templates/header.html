@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Header SENAI</title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    header {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header-logo img {
+      max-width: 120px;
+      height: auto;
+    }
+
+    /* Ajuste fino para o input de busca não ficar gigante em telas grandes */
+    .search-box {
+      max-width: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="mb-5">
+
+    <div class="container py-3">
+      <div class="row align-items-center justify-content-between g-3">
+        
+        <!-- Logo -->
+        <div class="col-12 col-md-auto text-center text-md-start header-logo">
+          <a href="#">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/05/SENAI_logo_2024.png"
+              alt="Logo SENAI"
+            >
+          </a>
+        </div>
+
+        <!-- Barra de Busca Simples -->
+        <div class="col-12 col-md-auto d-flex justify-content-center justify-content-md-end flex-grow-1">
+          <form class="search-box d-flex" role="search">
+            <input 
+              class="form-control me-2" 
+              type="search" 
+              placeholder="Pesquisar..." 
+              aria-label="Pesquisar"
+            >
+            <button class="btn btn-outline-primary" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+</body>
+</html>
